@@ -17,6 +17,9 @@ Each topic is documented with its **definition, purpose, working principle, impo
 | **Name** | Nandana S Korigoudar |
 | **Branch** | Electronics and Communication Engineering |
 | **Semester** | VII |
+| **USN** | 01FE23BEC336 |
+| **Roll No** | 637 |
+| **Division** | F |
 | **University** | KLE Technological University |
 
 ---
