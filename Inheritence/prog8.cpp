@@ -1,5 +1,4 @@
-// this is my version of Walis code.
-// GTU program:
+
 //Create a class Student that stores roll_no,name. Create a class Test that stores marks obtained in five subjects.
 //class Result derived from student and Test contains the total_marks and percentage obtained in test. Input and display information of a student
 
