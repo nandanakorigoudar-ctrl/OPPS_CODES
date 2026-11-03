@@ -1,53 +1,45 @@
-// Write a C++ program to implement multi-level inheritance using vehicle, car and sports car as classes use appropriate member functions and datamembers
+//write a cpp program with single level inheritance using constructor initializer list.
+// Single Level inheritance.
 
 #include<iostream>
 using namespace std;
 
-class vehicle
+class Animal
 {
-    int no_of_wheeles=4,no_of_doors=5;
+// int legs=4;                   //old
+int legs;
+int eyes;
+
 public:
+    Animal(int f,int h):legs(f),eyes(h){} // new line added
     void display1()
     {
-        cout<<"The vehicle class: No.of Wheeles :"<<no_of_wheeles<<"\nNo_of Doors :"<<no_of_doors<<endl;
-    }
+        cout<<"This is Base Class"<<endl;
+        cout<<"\nLegs= "<<legs<<endl;
+        cout<<"\nEyes= "<<eyes<<endl;
 
+    }
 };
 
-class car:public vehicle
+class Dog: public Animal
 {
-    string color="Blue";
-    string type="SUV";
+    // bool tail = true;
+    string dog_tail_color;                //new line added
 public:
+    Dog(int a,int b,string tail_color):Animal(a,b),dog_tail_color(tail_color){}   //new line added
     void display2()
     {
-        cout<<"The color: "<<color<<"\nthe Type: "<<type<<endl;
+        cout<<"This is Derived Class"<<endl;
+     //   cout<<"\nLegs= "<<legs<<endl;
+    //    cout<<"\nEyes= "<<eyes<<endl;
+        cout<<"\nTail_color= "<<dog_tail_color<<endl;
     }
 };
 
-class sports_car:public car
-{
-    int cc=1400;
-public:
-    void display3()
-    {
-        cout<<"The CC is: "<<cc<<endl;
-    }
-
-};
 int main()
 {
-    vehicle v;
-    car c;
-    sports_car s;
-    v.display1();
-    cout<<endl;
-    c.display1();
-    c.display2();
-    cout<<endl;
-    s.display1();
-    s.display2();
-    s.display3();
-
-    return 0;
+   // Animal a1(4,2);
+    Dog d1(7,5,"brown");
+    d1.display1();
+    d1.display2();
 }
